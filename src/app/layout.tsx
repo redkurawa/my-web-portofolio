@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={clsx(mulish.variable, 'antialiased')}>
-        <div className='mx-auto max-w-[1440px] bg-blue-50'>{children}</div>
+        <div className='mx-auto max-w-[1440px]'>{children}</div>
       </body>
     </html>
   );

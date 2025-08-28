@@ -9,7 +9,7 @@ import { aboutIcon, aboutSosmed } from '@/constants/about-data';
 const About = () => {
   return (
     <section className='relative z-10'>
-      <div className='custom-container border border-black'>
+      <div className='custom-container'>
         <Button variant='outline' size='outline' className='mx-auto'>
           About
         </Button>
