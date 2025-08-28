@@ -19,7 +19,7 @@ const About = () => {
 
         <div className='mx-auto mt-12 grid w-full grid-cols-1 gap-[20px] md:grid-cols-[2fr_1fr]'>
           <div className='bg-custom-gradient rounded-[20px] px-4 py-6 md:p-10'>
-            <div className='gap-2 border border-green-600 md:flex md:items-center md:justify-between'>
+            <div className='gap-2 md:flex md:items-center md:justify-between'>
               <div className='flex items-center gap-2'>
                 <div className=''>
                   <Image
@@ -61,7 +61,6 @@ const About = () => {
               </p>
             </div>
           </div>
-          {/* <div className='rounded-[20px] bg-[#F0DAC1]'> */}
           <div className='flex flex-col justify-end rounded-[20px] bg-[#F0DAC1]'>
             <Image
               src='/images/about-head.png'
@@ -79,12 +78,14 @@ const About = () => {
               backgroundImage: "url('/images/about-bg-porto.png')",
             }}
           >
-            <div className='border border-white'>
+            <div className=''>
               <div>
-                <h1>Check My Portfolio</h1>
-                <p>Explore selected works and real-world projects</p>
+                <h1 className='text-xl font-bold'>Check My Portfolio</h1>
+                <p className='text-md font-normal'>
+                  Explore selected works and real-world projects
+                </p>
               </div>
-              <Button variant='outline' size='icon'></Button>
+              {/* <Button variant='outline' size='icon'></Button> */}
               <Image
                 alt='sample portofolio'
                 src='/images/about-porto.png'
