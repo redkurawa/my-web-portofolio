@@ -1,5 +1,7 @@
+import { section } from 'motion/react-client';
 import React from 'react';
 
+import AnimatedHeading from '@/components/ui/animated-heading';
 import { Button } from '@/components/ui/button';
 
 const WorkExperience = () => {
@@ -9,6 +11,9 @@ const WorkExperience = () => {
       <Button variant='outline' size='outline' className=''>
         Work Experience
       </Button>
+      <AnimatedHeading className='text-display-xl mx-auto mt-2 mb-10 max-w-180 text-center font-extrabold text-neutral-900'>
+        A timeline of companies and roles that helped shape my skills.
+      </AnimatedHeading>
     </section>
   );
 };
