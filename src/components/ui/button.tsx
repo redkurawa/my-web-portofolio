@@ -72,7 +72,7 @@ const buttonVariants = cva(
         default:
           'bg-base-white text-md font-bold text-neutral-900 shadow-xs rounded-full hover:shadow-[0_0_32px_rgba(248,162,4,0.6)] tranition-shadow',
         outline:
-          'border border-neutral-300 text-sm font-bold px-3 py-1 text-neutral-900 rounded-full  hover:shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50',
+          'border border-neutral-300 text-sm font-bold px-3 py-1 text-neutral-900 rounded-full  hover:shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 mx-auto',
       },
       size: {
         default: 'h-11',
