@@ -70,7 +70,7 @@ export const Testimony = () => {
   return (
     <section className='custom-container mb-20'>
       testimony
-      <Button variant='outline' size='outline' className=''>
+      <Button variant='outline' size='outline' className='mx-auto'>
         Testimony
       </Button>
       {/* start anime */}

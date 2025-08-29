@@ -11,7 +11,7 @@ import { withMe, withOther } from '@/constants/superiority-data';
 const Superiority = () => {
   return (
     <section className='custom-container mt-20 mb-20'>
-      <Button variant='outline' size='outline' className=''>
+      <Button variant='outline' size='outline' className='mx-auto'>
         Superiority
       </Button>
       <AnimatedHeading className='text-display-xl mt-2 mb-10 text-center font-extrabold text-neutral-900'>

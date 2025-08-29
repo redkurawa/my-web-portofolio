@@ -4,7 +4,11 @@ import { Button } from '@/components/ui/button';
 const Skillset = () => {
   return (
     <section className='custom-container bg-primary-200 pt-20 pb-20'>
-      <Button variant='outline' size='outline' className='text-neutral-25'>
+      <Button
+        variant='outline'
+        size='outline'
+        className='text-neutral-25 mx-auto'
+      >
         Skillset
       </Button>
 

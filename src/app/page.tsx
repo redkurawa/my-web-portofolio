@@ -1,4 +1,5 @@
 import About from './home/partials/about';
+import Contact from './home/partials/contact';
 import Faq from './home/partials/faq';
 import Hero from './home/partials/hero';
 import Portfolio from './home/partials/portfolio';
@@ -18,6 +19,7 @@ const Home = () => {
       <WorkExperience />
       <Testimony />
       <Faq />
+      <Contact />
     </div>
   );
 };
