@@ -21,8 +21,8 @@ const Faq = () => {
         backgroundImage: "url('/images/hero-background2.png')",
       }}
     >
-      <div className='mx-auto mt-10 mb-20 max-w-300 rounded-[48px] bg-white/30 p-5 md:mt-25 md:mb-46'>
-        <div className='rounded-[32px] bg-white px-3 py-10 md:px-10 md:pt-10'>
+      <div className='mx-auto mt-10 mb-20 max-w-300 rounded-[48px] bg-white/30 p-3 md:mt-25 md:mb-46 md:p-5'>
+        <div className='rounded-[32px] bg-white px-1 py-10 md:px-5 md:pt-10'>
           <Button variant='outline' size='outline' className='mx-auto'>
             FAQ
           </Button>
