@@ -4,6 +4,7 @@ import React from 'react';
 
 import AnimatedHeading from '@/components/ui/animated-heading';
 import { Button } from '@/components/ui/button';
+import RotatingStar from '@/components/ui/rotating-star';
 
 import { withMe, withOther } from '@/constants/superiority-data';
 
@@ -25,12 +26,7 @@ const Superiority = () => {
             {withMe.map((data, index) => (
               <React.Fragment key={index}>
                 <li className='my-2 flex items-center gap-2 text-lg font-bold'>
-                  <Image
-                    alt='star'
-                    src='/icons/superiority-star-me.svg'
-                    width={32}
-                    height={32}
-                  />
+                  <RotatingStar src='/icons/superiority-star-me.svg' />
                   {data.text}
                 </li>
                 <hr className='border-[#FDFDFD]/50' />
@@ -46,12 +42,7 @@ const Superiority = () => {
             {withOther.map((data, index) => (
               <React.Fragment key={index}>
                 <li className='my-2 flex items-center gap-2 text-lg font-bold'>
-                  <Image
-                    alt='star'
-                    src='/icons/superiority-star-other.svg'
-                    width={32}
-                    height={32}
-                  />
+                  <RotatingStar src='/icons/superiority-star-other.svg' />
                   {data.text}
                 </li>
                 <hr className='border-neutral-300' />
