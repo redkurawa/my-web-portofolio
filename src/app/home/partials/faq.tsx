@@ -9,7 +9,7 @@ import {
 import AnimatedHeading from '@/components/ui/animated-heading';
 import { Button } from '@/components/ui/button';
 
-import { mockFaq } from '@/constants/__mocks__/help-faq.mock';
+import { mockFaq } from '@/constants/faq-data';
 
 type Faq = { id: string; q: string; a: string };
 
