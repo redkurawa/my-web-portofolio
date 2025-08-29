@@ -9,7 +9,7 @@ import { aboutIcon, aboutSosmed } from '@/constants/about-data';
 const About = () => {
   return (
     <section className='relative z-10'>
-      <div className='custom-container'>
+      <div className='custom-container mb-20'>
         <Button variant='outline' size='outline' className='mx-auto'>
           About
         </Button>
@@ -73,7 +73,7 @@ const About = () => {
         </div>
         <div className='mx-auto mt-5 grid w-full grid-cols-1 gap-5 md:grid-cols-[10fr_10fr_3fr]'>
           <div
-            className='bg-cover-center rounded-3xl border border-red-600 px-8 pt-8'
+            className='bg-cover-center rounded-3xl px-8 pt-8'
             style={{
               backgroundImage: "url('/images/about-bg-porto.png')",
             }}
@@ -113,6 +113,25 @@ const About = () => {
                 />
               </div>
             ))}
+
+            {/* {aboutIcon.map((data) => (
+              <div
+                key={data.alt}
+                style={{
+                  top: `${data.y}px`,
+                  left: `${data.x}px`,
+                  position: 'absolute',
+                }}
+                className='flex-center size-21 rounded-full bg-white/60'
+              >
+                <Image
+                  alt={data.alt}
+                  src={data.src}
+                  width={data.w}
+                  height={data.h}
+                />
+              </div>
+            ))} */}
 
             <h1 className='text-display-sm text-center font-bold text-black'>
               Built with 10+ Trusted Technologies
