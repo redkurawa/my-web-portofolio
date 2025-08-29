@@ -22,10 +22,17 @@ const Superiority = () => {
           <h1 className='text-display-xs text-center font-bold'>
             Working With me
           </h1>
+          <Image
+            className='mx-auto my-6'
+            alt='anonymous'
+            src='/images/hero-foto.png'
+            width={80}
+            height={80}
+          />
           <ul>
             {withMe.map((data, index) => (
               <React.Fragment key={index}>
-                <li className='my-2 flex items-center gap-2 text-lg font-bold'>
+                <li className='my-5 flex items-center gap-2 text-lg font-bold'>
                   <RotatingStar src='/icons/superiority-star-me.svg' />
                   {data.text}
                 </li>
@@ -36,12 +43,19 @@ const Superiority = () => {
         </div>
         <div className='rounded-3xl border border-neutral-300 p-6 text-black'>
           <h1 className='text-display-xs text-center font-bold'>
-            Working With other
+            Another Developer
           </h1>
+          <Image
+            className='mx-auto my-6'
+            alt='anonymous'
+            src='/icons/anony-foto.svg'
+            width={80}
+            height={80}
+          />
           <ul>
             {withOther.map((data, index) => (
               <React.Fragment key={index}>
-                <li className='my-2 flex items-center gap-2 text-lg font-bold'>
+                <li className='my-5 flex items-center gap-2 text-lg font-bold'>
                   <RotatingStar src='/icons/superiority-star-other.svg' />
                   {data.text}
                 </li>
