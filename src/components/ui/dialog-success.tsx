@@ -19,9 +19,9 @@ type Props = {
 export function SuccessDialog({ open, onOpenChange, onBackHome }: Props) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className='max-w-md border-white/10 bg-neutral-900 text-white'>
+      <DialogContent className='max-w-md overflow-hidden border-white/10 text-white'>
         <DialogHeader>
-          <div className='mx-auto -mt-10 h-20 w-20'>
+          <div className='mx-auto'>
             <Image
               src='/images/mail-success.png'
               alt='Success'
@@ -29,13 +29,13 @@ export function SuccessDialog({ open, onOpenChange, onBackHome }: Props) {
               height={80}
             />
           </div>
-          <DialogTitle className='text-center text-base font-semibold'>
-            Message Received!
+          <DialogTitle className='text-center text-xl font-bold text-neutral-950'>
+            Got Your Message!
           </DialogTitle>
         </DialogHeader>
 
-        <p className='mx-auto max-w-sm text-center text-sm text-white/70'>
-          Thanks for reaching out—we’ll get back to you as soon as possible.
+        <p className='text-md-medium mx-auto max-w-sm text-center text-neutral-700'>
+          Really appreciate you reaching out. I’ll be in touch soon.
         </p>
 
         <Button
