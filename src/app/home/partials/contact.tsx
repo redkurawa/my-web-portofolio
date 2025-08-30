@@ -74,7 +74,7 @@ export default function Contact() {
       <div className='custom-container'>
         <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
           {/* left */}
-          <div>
+          <div className='flex flex-col justify-between'>
             <div className='flex items-center gap-2'>
               <div className=''>
                 <Image
@@ -89,24 +89,26 @@ export default function Contact() {
                 <p>edwinanderson@email.com</p>
               </div>
             </div>
-            <div className='text-display-3xl font-bold'>
-              Great results begin with clear ideas.
-            </div>
-            <div className='mt-6 flex items-center gap-2 md:mt-0'>
-              {aboutSosmed.map((data) => (
-                <div
-                  key={data.alt}
-                  className='flex-center border-primary-200 bg-primary-200 size-10 rounded-full border'
-                >
-                  <Image
-                    className=''
-                    src={data.src}
-                    alt={data.alt}
-                    width={data.w}
-                    height={data.h}
-                  />
-                </div>
-              ))}
+            <div>
+              <div className='text-display-3xl font-bold'>
+                Great results begin with clear ideas.
+              </div>
+              <div className='mt-6 flex items-center gap-2 md:mt-0'>
+                {aboutSosmed.map((data) => (
+                  <div
+                    key={data.alt}
+                    className='flex-center border-primary-200 bg-primary-200 size-10 rounded-full border'
+                  >
+                    <Image
+                      className=''
+                      src={data.src}
+                      alt={data.alt}
+                      width={data.w}
+                      height={data.h}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           {/* right */}
@@ -206,7 +208,7 @@ const ContactForm = React.forwardRef<
         <textarea
           id='message'
           name='message'
-          rows={6}
+          rows={1}
           required
           placeholder='Tell me about your project or just say hi :) ...'
           className='w-full rounded-md border border-white/15 bg-transparent px-3 py-2'
