@@ -62,7 +62,7 @@ export default function Contact() {
   return (
     <section className='bg-[#0A0D12] pt-20'>
       <div className='custom-container'>
-        <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-6 border-b border-neutral-700 pb-10 md:grid-cols-2 md:pb-40'>
           {/* left */}
           <div className='flex flex-col justify-between'>
             <div className='flex items-center gap-2'>
@@ -130,6 +130,11 @@ export default function Contact() {
             />
             {/* end porto 5 */}
           </div>
+        </div>
+        <div>
+          <h1 className='text-md-regular py-6 text-center text-neutral-600 md:py-8'>
+            © 2025 -adi-. All rights reserved.
+          </h1>
         </div>
       </div>
     </section>
