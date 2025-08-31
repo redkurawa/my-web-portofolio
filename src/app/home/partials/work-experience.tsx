@@ -5,7 +5,7 @@ const WorkExperience = () => {
   return (
     <section className='custom-container mb-20'>
       work-experience
-      <Button variant='outline' size='outline' className='mx-auto'>
+      <Button variant='outline' size='xs' className='mx-auto'>
         Work Experience
       </Button>
       <AnimatedHeading className='text-display-xl mx-auto mt-2 mb-10 max-w-180 text-center font-extrabold text-neutral-900'>

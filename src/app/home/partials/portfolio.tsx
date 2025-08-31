@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <section className='custom-container mb-20'>
       portfolio
-      <Button variant='outline' size='outline' className='mx-auto'>
+      <Button variant='outline' size='xs' className='mx-auto'>
         Portfolio
       </Button>
     </section>

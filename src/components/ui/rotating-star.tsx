@@ -5,17 +5,10 @@ import Image from 'next/image';
 
 interface RotatingIconProps {
   src: string;
-  // alt?: string;
-  // size?: number;
   className?: string;
 }
 
-const RotatingStar = ({
-  src,
-  // alt = 'icon',
-  // size = 32,
-  className = '',
-}: RotatingIconProps) => {
+const RotatingStar = ({ src, className = '' }: RotatingIconProps) => {
   return (
     <motion.div
       initial={{ rotate: 0 }}

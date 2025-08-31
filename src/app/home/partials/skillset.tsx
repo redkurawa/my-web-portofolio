@@ -5,11 +5,7 @@ const Skillset = () => {
   return (
     <section className='bg-primary-200 pt-20 pb-20'>
       <div className='custom-container'>
-        <Button
-          variant='outline'
-          size='outline'
-          className='text-neutral-25 mx-auto'
-        >
+        <Button variant='outline' size='xs' className='text-neutral-25 mx-auto'>
           Skillset
         </Button>
 

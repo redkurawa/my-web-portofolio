@@ -9,15 +9,6 @@ import { SuccessDialog } from '@/components/ui/dialog-success';
 
 import { aboutSosmed } from '@/constants/about-data';
 
-const services = [
-  { id: 'web', label: 'Web Development' },
-  { id: 'mobile', label: 'Mobile App Development' },
-  { id: 'uiux', label: 'UI/UX Design' },
-  { id: 'cloud', label: 'Cloud Solutions' },
-  { id: 'soft', label: 'Software Development' },
-  { id: 'other', label: 'Other' },
-];
-
 export default function Contact() {
   // from porto 5
   const [successOpen, setSuccessOpen] = React.useState(false);
@@ -53,7 +44,7 @@ export default function Contact() {
       toast.success('Message sent', {
         description: 'Thanks! We’ll be in touch shortly.',
       });
-    } catch (err: any) {
+    } catch {
       // ❌ gagal
       setErrorOpen(true);
       toast.error('Send failed', {
@@ -63,7 +54,6 @@ export default function Contact() {
           onClick: () => formRef.current?.requestSubmit(),
         },
       });
-      // console.error(err?.message || err);
     } finally {
       setLoading(false);
     }
@@ -113,11 +103,7 @@ export default function Contact() {
           </div>
           {/* right */}
           <div className=''>
-            <Button
-              variant='outline'
-              size='outline'
-              className='text-neutral-25'
-            >
+            <Button variant='outline' size='xs' className='text-neutral-25'>
               Contact
             </Button>
             <h1 className='text-display-xl font-bold'>
@@ -241,7 +227,7 @@ const ContactForm = React.forwardRef<
       <Button
         type='submit'
         disabled={loading}
-        className='bg-primary-300 hover:bg-primary-200 w-full rounded-full px-4 py-3 font-semibold text-white disabled:opacity-60'
+        className='bg-primary-200 hover:bg-primary-300 w-full rounded-full px-4 py-3 font-semibold text-white disabled:opacity-60'
       >
         {loading ? 'Sending...' : 'Send'}
       </Button>

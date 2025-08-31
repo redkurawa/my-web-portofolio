@@ -23,7 +23,7 @@ const Faq = () => {
     >
       <div className='mx-auto mt-10 mb-20 max-w-300 rounded-[48px] bg-white/30 p-3 md:mt-25 md:mb-46 md:p-5'>
         <div className='rounded-[32px] bg-white px-1 py-10 md:px-5 md:pt-10'>
-          <Button variant='outline' size='outline' className='mx-auto'>
+          <Button variant='outline' size='xs' className='mx-auto'>
             FAQ
           </Button>
           <AnimatedHeading className='text-display-sm md:text-display-xl mt-2 mb-10 text-center font-extrabold text-neutral-900'>

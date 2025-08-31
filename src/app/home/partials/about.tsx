@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section className='relative z-10'>
       <div className='custom-container mb-20'>
-        <Button variant='outline' size='outline' className='mx-auto'>
+        <Button variant='outline' size='xs' className='mx-auto'>
           About
         </Button>
         <h1 className='text-display-xl mt-2 text-center font-extrabold text-neutral-900'>
