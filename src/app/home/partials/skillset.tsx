@@ -1,5 +1,8 @@
+import { SkillCard } from '@/components/skill-card';
 import AnimatedHeading from '@/components/ui/animated-heading';
 import { Button } from '@/components/ui/button';
+
+import { skills } from '@/constants/skillset-data';
 
 const Skillset = () => {
   return (
@@ -13,15 +16,21 @@ const Skillset = () => {
           Skills That Build Great Interfaces
         </AnimatedHeading>
 
-        <div className='grid grid-cols-4 grid-rows-2 gap-4'>
-          <div className='rounded-xl bg-white text-black'>1</div>
-          <div className='rounded-xl bg-white text-black'>2</div>
-          <div className='rounded-xl bg-white text-black'>3</div>
-          <div className='rounded-xl bg-white text-black'>4</div>
-          <div className='rounded-xl bg-white text-black'>5</div>
-          <div className='rounded-xl bg-white text-black'>6</div>
-          <div className='rounded-xl bg-white text-black'>7</div>
-          <div className='rounded-xl bg-white text-black'>8</div>
+        <div className='grid w-full grid-cols-2 gap-4 md:grid-cols-4 md:grid-rows-2'>
+          {skills.map((data, index) => (
+            <div
+              key={index}
+              className='flex h-64 w-full items-center justify-center text-black'
+            >
+              <SkillCard
+                name={data.name}
+                src={data.src}
+                w={data.w}
+                h={data.h}
+                p={data.p}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

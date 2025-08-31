@@ -1,0 +1,58 @@
+export const skills = [
+  {
+    name: 'html',
+    src: '/icons/html.svg',
+    w: 40,
+    h: 40,
+    p: 90,
+  },
+  {
+    name: 'css',
+    src: '/icons/css.svg',
+    w: 20,
+    h: 25,
+    p: 80,
+  },
+  {
+    name: 'Javascipt',
+    src: '/icons/javas.svg',
+    w: 30,
+    h: 30,
+    p: 85,
+  },
+  {
+    name: 'React JS',
+    src: '/icons/react.svg',
+    w: 30,
+    h: 28,
+    p: 78,
+  },
+  {
+    name: 'Mongo DB',
+    src: '/icons/mongo.svg',
+    w: 40,
+    h: 35,
+    p: 77,
+  },
+  {
+    name: 'Docker',
+    src: '/icons/docker.svg',
+    w: 40,
+    h: 30,
+    p: 60,
+  },
+  {
+    name: 'Express JS',
+    src: '/icons/express.svg',
+    w: 30,
+    h: 30,
+    p: 55,
+  },
+  {
+    name: 'PostgreSQL',
+    src: '/icons/posgre.svg',
+    w: 30,
+    h: 30,
+    p: 75,
+  },
+];
