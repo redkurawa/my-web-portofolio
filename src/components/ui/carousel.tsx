@@ -3,7 +3,7 @@
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import * as React from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -196,7 +196,7 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className='shrink-0' />
+      <ChevronLeft className='shrink-0' />
       <span className='sr-only'>Previous slide</span>
     </Button>
   );
@@ -226,7 +226,7 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className='shrink-0' />
+      <ChevronRight className='shrink-0' />
       <span className='sr-only'>Next slide</span>
     </Button>
   );
