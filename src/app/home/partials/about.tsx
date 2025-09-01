@@ -85,7 +85,6 @@ const About = () => {
                   Explore selected works and real-world projects
                 </p>
               </div>
-              {/* <Button variant='outline' size='icon'></Button> */}
               <Image
                 alt='sample portofolio'
                 src='/images/about-porto.png'
@@ -103,7 +102,12 @@ const About = () => {
             {aboutIcon.map((data) => (
               <div
                 key={data.alt}
-                className={`absolute top-${data.y} ${data.x < 0 ? `-left-${Math.abs(data.x)}` : `left-${data.x}`} flex-center size-21 rounded-full bg-white/60`}
+                style={{
+                  top: `${data.y * 4}px`,
+                  left: `${data.x * 4}px`,
+                  position: 'absolute',
+                }}
+                className='flex-center size-21 rounded-full bg-white/60'
               >
                 <Image
                   alt={data.alt}

@@ -34,8 +34,12 @@ export const Testimony = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className='absolute -top-15 right-0 flex -translate-x-10 items-center justify-center'>
+            <CarouselPrevious className='hover:bg-primary-100 relative left-0 translate-x-0 hover:translate-x-0' />
+          </div>
+          <div className='absolute -top-15 right-0 flex -translate-x-0 items-center justify-center'>
+            <CarouselNext className='hover:bg-primary-100 relative right-0 translate-x-0 hover:translate-x-0' />
+          </div>
         </Carousel>
       </div>
     </section>
