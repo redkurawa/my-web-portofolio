@@ -6,7 +6,7 @@ import { skills } from '@/constants/skillset-data';
 
 const Skillset = () => {
   return (
-    <section className='bg-primary-200 pt-20 pb-20'>
+    <section className='bg-primary-200 pt-20 pb-20' id='skill'>
       <div className='custom-container'>
         <Button variant='outline' size='xs' className='text-neutral-25 mx-auto'>
           Skillset

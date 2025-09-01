@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -33,7 +34,9 @@ const Hero = () => {
             Build fast, accessible, and responsive web experiences that users
             love.
           </p>
-          <Button className='mt-6 w-full md:mt-17 md:w-75'>Say Hello</Button>
+          <Button className='mt-6 w-full md:mt-17 md:w-75'>
+            <Link href='/#contact'>Say Hello</Link>
+          </Button>
         </div>
         {/* right */}
         <div className='flex-[6.9] basis-80'>

@@ -40,7 +40,9 @@ const Navbar = () => {
           </ul>
         </nav>
         {/* buttonv */}
-        <Button className='hidden px-23 md:flex'>Hire Me</Button>
+        <Button className='hidden px-23 md:flex'>
+          <Link href='/#contact'>Hire Me</Link>
+        </Button>
 
         <Sheet>
           <SheetTrigger className='md:hidden'>

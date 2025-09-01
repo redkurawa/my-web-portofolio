@@ -1,5 +1,6 @@
 import { Mail } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import { Button } from '@/components/ui/button';
@@ -8,7 +9,7 @@ import { aboutIcon, aboutSosmed } from '@/constants/about-data';
 
 const About = () => {
   return (
-    <section className='relative z-10'>
+    <section className='relative z-10' id='about'>
       <div className='custom-container mb-20'>
         <Button variant='outline' size='xs' className='mx-auto'>
           About
@@ -118,31 +119,14 @@ const About = () => {
               </div>
             ))}
 
-            {/* {aboutIcon.map((data) => (
-              <div
-                key={data.alt}
-                style={{
-                  top: `${data.y}px`,
-                  left: `${data.x}px`,
-                  position: 'absolute',
-                }}
-                className='flex-center size-21 rounded-full bg-white/60'
-              >
-                <Image
-                  alt={data.alt}
-                  src={data.src}
-                  width={data.w}
-                  height={data.h}
-                />
-              </div>
-            ))} */}
-
             <h1 className='text-display-sm text-center font-bold text-black'>
               Built with 10+ Trusted Technologies
             </h1>
           </div>
           <div className='bg-primary-200 flex-center h-12 rounded-3xl md:h-full'>
-            <Mail className='size-6 md:size-10' />
+            <Link href='/#contact'>
+              <Mail className='size-6 md:size-10' />
+            </Link>
           </div>
         </div>
       </div>

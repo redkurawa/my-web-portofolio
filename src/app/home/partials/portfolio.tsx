@@ -14,7 +14,7 @@ import { portofolios } from '@/constants/portofolio';
 
 const Portfolio = () => {
   return (
-    <section className='custom-container mb-20'>
+    <section className='custom-container mb-20' id='project'>
       portfolio
       <Button variant='outline' size='xs' className='mx-auto'>
         Portfolio

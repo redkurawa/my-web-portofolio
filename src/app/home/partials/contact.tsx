@@ -60,7 +60,7 @@ export default function Contact() {
   }
 
   return (
-    <section className='bg-[#0A0D12] pt-2 md:pt-20'>
+    <section className='bg-[#0A0D12] pt-2 md:pt-20' id='contact'>
       <div className='custom-container'>
         <div className='grid grid-cols-1 gap-6 border-b border-neutral-700 pb-10 md:grid-cols-2 md:pb-40'>
           {/* left */}

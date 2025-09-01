@@ -17,6 +17,7 @@ const Faq = () => {
   return (
     <section
       className='relative overflow-hidden px-4 md:pt-0'
+      id='faq'
       style={{
         backgroundImage: "url('/images/hero-background2.png')",
       }}
