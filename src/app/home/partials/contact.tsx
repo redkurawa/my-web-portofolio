@@ -62,7 +62,7 @@ export default function Contact() {
   return (
     <section className='bg-[#0A0D12] pt-2 md:pt-20' id='contact'>
       <div className='custom-container'>
-        <div className='grid grid-cols-1 gap-6 border-b border-neutral-700 pb-10 md:grid-cols-2 md:pb-40'>
+        <div className='grid grid-cols-1 gap-6 border-b border-neutral-700 pb-10 md:grid-cols-2 md:pb-20'>
           {/* left */}
           <div className='flex flex-col justify-between'>
             <div className='flex items-center gap-2'>
@@ -141,21 +141,6 @@ export default function Contact() {
   );
 }
 
-/* ---------- START subcomponents ---------- */
-
-// function FormHeader() {
-//   return (
-//     <header className='text-center'>
-//       <h2 className='text-display-sm md:text-display-lg font-semibold'>
-//         Ready to Start? Let’s Talk.
-//       </h2>
-//       <p className='mt-2 text-sm text-white/70 md:text-base'>
-//         Tell us what you need, and we’ll get back to you soon.
-//       </p>
-//     </header>
-//   );
-// }
-
 const ContactForm = React.forwardRef<
   HTMLFormElement,
   { onSubmit: (e: React.FormEvent<HTMLFormElement>) => void; loading: boolean }
@@ -205,29 +190,6 @@ const ContactForm = React.forwardRef<
           className='w-full rounded-md border border-white/15 bg-transparent px-3 py-2'
         />
       </div>
-
-      {/* Services */}
-      {/* <fieldset className='space-y-2'>
-        <legend className='text-sm text-white'>Services</legend>
-        <div className='grid grid-cols-1 gap-3 sm:grid-cols-2'>
-          {services.map((s) => (
-            <label
-              key={s.id}
-              htmlFor={s.id}
-              className='flex cursor-pointer items-center gap-3 text-sm text-white/80'
-            >
-              <input
-                id={s.id}
-                name='services'
-                type='checkbox'
-                value={s.label}
-                className='h-4 w-4 rounded border-white/30 bg-transparent'
-              />
-              {s.label}
-            </label>
-          ))}
-        </div>
-      </fieldset> */}
 
       <Button
         type='submit'

@@ -223,7 +223,7 @@
 
 /* end shadcn ui */
 body {
-  @apply text-neutral-25 bg-base-white text-sm font-normal;
+  @apply text-neutral-25 bg-base-black text-sm font-normal;
   font-family: var(--font-mulish);
 }
 
