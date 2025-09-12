@@ -12,6 +12,8 @@ import { Button } from '@/components/ui/button';
 import experienceData from '@/constants/work-experience';
 import { cn } from '@/lib/utils';
 
+import workcalendar from '../../../../public/icons/calendar.png';
+
 const WorkExperience = () => {
   const isLargeIsh = useMedia('(min-width:1024px', false);
   return (
@@ -104,16 +106,17 @@ const WorkItem: React.FC<WorkItemProps> = ({
             className='rounded-t-2xl object-contain md:hidden'
           />
           <div className='p-2 md:p-0'>
-            <p className='text-sm-regular md:text-md-medium text-neutral-900'>
+            <p className='text-sm-regular md:text-md-medium mb-2 text-neutral-900'>
+              <Image src={workcalendar} alt='calendar' className='inline' />{' '}
               {startDate}-{endDate}
             </p>
-            <Image src={logo} alt='title' className='w-auto' />
+            <Image src={logo} alt='title' className='mb-2 w-auto' />
             <p className='md:display-xs-bold text-md-bold text-neutral-900'>
               {title}
             </p>
           </div>
         </div>
-        <p className='text-sm-regular md:text-md-regular p-2 text-neutral-400 md:p-0'>
+        <p className='text-sm-regular md:text-md-regular p-2 text-neutral-900 md:p-0'>
           {description}
         </p>
       </div>
