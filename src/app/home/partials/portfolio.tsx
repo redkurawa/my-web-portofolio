@@ -1,5 +1,3 @@
-import { ArrowRight } from 'lucide-react';
-
 import AnimatedHeading from '@/components/ui/animated-heading';
 import { Button } from '@/components/ui/button';
 import {

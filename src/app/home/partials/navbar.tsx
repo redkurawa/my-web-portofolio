@@ -1,8 +1,7 @@
 // import { Sheet } from 'lucide-react';
-import { Menu, MenuIcon } from 'lucide-react';
+import { MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 import { DropDownUserMenu } from '@/components/navbar-dropdown';
 import { Button } from '@/components/ui/button';
@@ -11,12 +10,6 @@ import {
   DropdownMenu,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from '@/components/ui/sheet';
 
 import { navigationData } from '@/constants/navigation-data';
 
@@ -49,25 +42,6 @@ const Navbar = () => {
           <Link href='/#contact'>Hire Me</Link>
         </Button>
 
-        {/* <Sheet>
-          <SheetTrigger className='md:hidden'>
-            <Menu className='cursor-pointer' />
-          </SheetTrigger>
-          <SheetContent className='w-full p-4'>
-            <nav className=''>
-              <ul className='text-black'>
-                {navigationData.map((data) => (
-                  <li key={data.label} className='mb-2'>
-                    <Link href={data.href}>{data.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <SheetClose asChild>
-              <Button className='bg-primary-200 w-full'>Hire Me</Button>
-            </SheetClose>
-          </SheetContent>
-        </Sheet> */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild className='md:hidden'>
             <div className='cursor-pointer'>
