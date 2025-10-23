@@ -56,9 +56,24 @@ export function RingProgress({
     animate(motionValue, percentage, { duration, ease: 'easeOut' });
   };
 
+  // useEffect(() => {
+  //   triggerAnimation();
+  // }, [percentage, circumference]);
+
   useEffect(() => {
-    triggerAnimation();
-  }, [percentage, circumference]);
+    // Reset stroke
+    controls.set({ strokeDashoffset: circumference });
+
+    // Animate stroke
+    controls.start({
+      strokeDashoffset: circumference - (percentage / 100) * circumference,
+      transition: { duration, ease: 'easeOut' },
+    });
+
+    // Animate number 0 → target
+    motionValue.set(0);
+    animate(motionValue, percentage, { duration, ease: 'easeOut' });
+  }, [circumference, percentage, duration, controls, motionValue]);
 
   return (
     <motion.div
