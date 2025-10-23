@@ -75,8 +75,8 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <p>Edwin Anderson</p>
-                <p>edwinanderson@email.com</p>
+                <p>-adi-</p>
+                <p>adi@email.com</p>
               </div>
             </div>
             <div>

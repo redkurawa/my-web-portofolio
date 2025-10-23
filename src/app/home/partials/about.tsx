@@ -31,8 +31,8 @@ const About = () => {
                   />
                 </div>
                 <div>
-                  <p>Edwin Anderson</p>
-                  <p>edwinanderson@email.com</p>
+                  <p>-adi-</p>
+                  <p>adi@email.com</p>
                 </div>
               </div>
               <div className='mt-6 flex items-center gap-2 md:mt-0'>
