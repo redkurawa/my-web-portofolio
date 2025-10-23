@@ -22,7 +22,7 @@ export async function POST(req: Request) {
 
     // ⬇️ Resend returns { data, error }
     const { data, error } = await resend.emails.send({
-      from: 'Contact <contact@your-domain.com>',
+      from: 'Portofolio <portofolio@resend.dev>',
       to: process.env.CONTACT_TO!, // Gmail tujuan
       subject: `New inquiry from ${name}`,
       replyTo: email, // ✅ camelCase
